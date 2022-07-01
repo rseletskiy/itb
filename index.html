@@ -22,6 +22,9 @@
     <link rel="icon" href="#" type="image/x-icon">
     <link rel="shortcut icon" href="#" type="image/x-icon">
 
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/glq6hpu.css">
+
     <!-- css libs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
@@ -43,6 +46,24 @@
                     <ul class="menu flex-align-center">
                         <li class="menu__item">
                             <a class="menu__link" href="#">Услуги</a>
+
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Видеонаблюдение</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">ОПС</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">СКУД</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Электромонтаж</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Проектирование</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">Цены</a>
@@ -75,7 +96,204 @@
     </header>
 
     <main>
+        <section class="hero-section offer-section">
+            <div class="container">
+                <div class="offer">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="./index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                    </ul>
+                    <h1 class="offer__title">
+                        Системы видеонаблюдения "под ключ"
+                    </h1>
+                    <p class="offer__message">
+                        Профессиональный монтаж. Сертифицированное оборудование. Строгое соблюдение сроков
+                    </p>
+                    <button type="button" class="primary-btn">
+                        Заказать бесплатный расчет
+                    </button>
+                </div>
+            </div>
+        </section>
 
+        <section class="get-section">
+            <div class="container">
+                <h4 class="get__title regular-title">
+                    Заказывая монтаж у нас, вы получаете:
+                </h4>
+                <ul class="get-list">
+                    <li class="get-list__item">
+                        <div class="get-list__item-icon">
+                            <img src="./assets/images/get-icon-1.svg" draggable="false" width="134" height="134" alt="Бесплатный выезд и составление сметы">
+                        </div>
+                        <h6 class="get-list__item-title">
+                            Бесплатный выезд и составление сметы
+                        </h6>
+                        <p class="get-list__item-message">
+                            Дополнительно - демонстрация оборудования перед заключением договора
+                        </p>
+                    </li>
+                    <li class="get-list__item">
+                        <div class="get-list__item-icon">
+                            <img src="./assets/images/get-icon-2.svg" draggable="false" width="134" height="134" alt="Видеонаблюдение под любой бюджет">
+                        </div>
+                        <h6 class="get-list__item-title">
+                            Видеонаблюдение под любой бюджет
+                        </h6>
+                        <p class="get-list__item-message">
+                            Мы используем только сертифицированное оборудование
+                        </p>
+                    </li>
+                    <li class="get-list__item">
+                        <div class="get-list__item-icon">
+                            <img src="./assets/images/get-icon-3.svg" draggable="false" width="134" height="134" alt="Удаленный контроль над всем происходящим">
+                        </div>
+                        <h6 class="get-list__item-title">
+                            Удаленный контроль над всем происходящим
+                        </h6>
+                        <p class="get-list__item-message">
+                            Благодаря многолетнему опыту работы, мы знаем, как обеспечить контроль 24/7
+                        </p>
+                    </li>
+                    <li class="get-list__item">
+                        <div class="get-list__item-icon">
+                            <img src="./assets/images/get-icon-4.svg" draggable="false" width="134" height="134" alt="Удаленный контроль над всем происходящим">
+                        </div>
+                        <h6 class="get-list__item-title">
+                            Гарантия 1 год на монтажные работы
+                        </h6>
+                        <p class="get-list__item-message">
+                            А также строгое соблюдение всех сроков и договоренностей
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="install-section">
+            <div class="container">
+                <h4 class="install__title regular-title">
+                    Мы устанавливаем
+                </h4>
+                <ul class="install-list">
+                    <li class="itb-card">
+                        <div class="itb-card__img">
+                            <img src="./assets/images/card-img-1.jpg" draggable="false" width="380" height="221" alt="Системы видеонаблюдения">
+                        </div>
+                        <div class="itb-card__body">
+                            <div class="itb-card__info">
+                                <h6 class="itb-card__title">
+                                    Системы видеонаблюдения
+                                </h6>
+                                <p class="itb-card__message">
+                                    Стоимость: от 14 000 руб.
+                                </p>
+                            </div>
+
+                            <a href="#" class="itb-card__more">
+                                Подробнее
+                            </a>
+                        </div>
+                    </li>
+                    <li class="itb-card">
+                        <div class="itb-card__img">
+                            <img src="./assets/images/card-img-2.jpg" draggable="false" width="380" height="221" alt="Охранно-пожарная сигнализация">
+                        </div>
+                        <div class="itb-card__body">
+                            <div class="itb-card__info">
+                                <h6 class="itb-card__title">
+                                    Охранно-пожарная сигнализация
+                                </h6>
+                                <p class="itb-card__message">
+                                    Стоимость: после осмотра
+                                </p>
+                            </div>
+
+                            <a href="#" class="itb-card__more">
+                                Подробнее
+                            </a>
+                        </div>
+                    </li>
+                    <li class="itb-card">
+                        <div class="itb-card__img">
+                            <img src="./assets/images/card-img-3.jpg" draggable="false" width="380" height="221" alt="Системы контроля и управления доступом">
+                        </div>
+                        <div class="itb-card__body">
+                            <div class="itb-card__info">
+                                <h6 class="itb-card__title">
+                                    Системы контроля и управления доступом
+                                </h6>
+                                <p class="itb-card__message">
+                                    Стоимость: после осмотра
+                                </p>
+                            </div>
+
+                            <a href="#" class="itb-card__more">
+                                Подробнее
+                            </a>
+                        </div>
+                    </li>
+                    <li class="itb-card">
+                        <div class="itb-card__img">
+                            <img src="./assets/images/card-img-4.jpg" draggable="false" width="380" height="221" alt="Шлагбаумы и системы ограждения">
+                        </div>
+                        <div class="itb-card__body">
+                            <div class="itb-card__info">
+                                <h6 class="itb-card__title">
+                                    Шлагбаумы и системы ограждения
+                                </h6>
+                                <p class="itb-card__message">
+                                    Монтаж от 22 000 руб.
+                                </p>
+                            </div>
+
+                            <a href="#" class="itb-card__more">
+                                Подробнее
+                            </a>
+                        </div>
+                    </li>
+                    <li class="itb-card">
+                        <div class="itb-card__img">
+                            <img src="./assets/images/card-img-5.jpg" draggable="false" width="380" height="221" alt="Электромонтаж">
+                        </div>
+                        <div class="itb-card__body">
+                            <div class="itb-card__info">
+                                <h6 class="itb-card__title">
+                                    Электромонтаж
+                                </h6>
+                                <p class="itb-card__message">
+                                    Стоимость: после осмотра
+                                </p>
+                            </div>
+
+                            <a href="#" class="itb-card__more">
+                                Подробнее
+                            </a>
+                        </div>
+                    </li>
+                    <li class="itb-card">
+                        <div class="itb-card__img">
+                            <img src="./assets/images/card-img-6.jpg" draggable="false" width="380" height="221" alt="Проектирование систем безопасности">
+                        </div>
+                        <div class="itb-card__body">
+                            <div class="itb-card__info">
+                                <h6 class="itb-card__title">
+                                    Проектирование систем безопасности
+                                </h6>
+                                <p class="itb-card__message">
+                                    Стоимость: от 14 000 руб.
+                                </p>
+                            </div>
+
+                            <a href="#" class="itb-card__more">
+                                Подробнее
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
