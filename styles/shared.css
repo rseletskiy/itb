@@ -297,6 +297,15 @@ a {
     font-weight: 700;
 }
 
+a.primary-btn {
+    display: flex
+}
+
+.primary-btn.black {
+    background-color: #000;
+    color: #fff;
+}
+
 .regular-title {
     font-size: 2.5rem;
     line-height: 1.475em;
@@ -520,7 +529,7 @@ a {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 999;
+    z-index: 99999999;
     cursor: pointer;
     -webkit-transition: border-color .4s ease;
     -o-transition: border-color .4s ease;

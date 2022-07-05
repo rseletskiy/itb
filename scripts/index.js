@@ -20,17 +20,38 @@ try {
   });
 } catch (e) {}
 
+try {
+  let itbComplexSlider = new Swiper("#itb-complex-slider", {
+    slidesPerView: 3,
+    spaceBetween: 21,
+    navigation: {
+      nextEl: ".itb-complex-button-next",
+      prevEl: ".itb-complex-button-prev",
+    },
+  });
+} catch (e) {}
+try {
+  let itbComplexSlider = new Swiper("#services-slider", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".services-button-next",
+      prevEl: ".services-button-prev",
+    },
+  });
+} catch (e) {}
+
 MicroModal.init({
-  onShow: (modal) => console.info(`${modal.id} is shown`), // [1]
-  onClose: (modal) => console.info(`${modal.id} is hidden`), // [2]
-  openTrigger: "data-custom-open", // [3]
-  closeTrigger: "data-custom-close", // [4]
-  openClass: "is-open", // [5]
-  disableScroll: true, // [6]
-  disableFocus: false, // [7]
-  awaitOpenAnimation: false, // [8]
-  awaitCloseAnimation: false, // [9]
-  debugMode: true, // [10]
+  onShow: (modal) => console.info(`${modal.id} is shown`), 
+  onClose: (modal) => console.info(`${modal.id} is hidden`),
+  openTrigger: "data-custom-open", 
+  closeTrigger: "data-custom-close", 
+  openClass: "is-open",
+  disableScroll: true,
+  disableFocus: false,
+  awaitOpenAnimation: false,
+  awaitCloseAnimation: false,
+  debugMode: true,
 });
 
 try {
