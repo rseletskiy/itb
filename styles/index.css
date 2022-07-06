@@ -501,6 +501,8 @@
 .contacts-map img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 .contacts-info {
@@ -1290,4 +1292,48 @@
     max-width: 137px;
     padding: 11px;
     color: #2E3A3B;
+}
+
+.contacts-page-section {
+    padding: 21px 0 69px;
+    background-color: #EFEFEF;
+}
+
+.contacts-page-section .breadcrumbs {
+    margin-bottom: 42px;
+}
+
+.contacts-page-title {
+    margin-bottom: 44px;
+}
+
+.contacts-page-section .contacts-link, 
+.contacts-page-section .contacts-social-title {
+    color: #000;
+}
+
+.contacts-page-section .contacts-social {
+    margin-bottom: 64px;
+}
+
+.contacts-download {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    font-size: 1.25rem;
+    line-height: 1.45em;
+}
+
+.contacts-download span {
+    display: block;
+    margin: 0 16px 0 12px;
+}
+
+.contacts-page-section .contacts-map {
+    width: calc(66.2139219% + 19vw);
+    margin-left: -19vw;
+}
+
+.contacts-page-section .contacts-map img {
+    max-height: 557px;
 }
