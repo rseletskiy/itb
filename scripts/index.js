@@ -30,6 +30,7 @@ try {
     },
   });
 } catch (e) {}
+
 try {
   let itbComplexSlider = new Swiper("#services-slider", {
     slidesPerView: "auto",
@@ -40,6 +41,15 @@ try {
     },
   });
 } catch (e) {}
+
+try {
+  const accordions = Array.from(document.querySelectorAll('.accordion-container'));
+  new Accordion(accordions, {
+    showMultiple: true,
+  });
+} catch (e) {
+  console.error(e);
+}
 
 MicroModal.init({
   onShow: (modal) => console.info(`${modal.id} is shown`), 
