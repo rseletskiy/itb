@@ -718,6 +718,38 @@ a.primary-btn {
     will-change: transform;
 }
 
+.table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 4px 5.7142vw;
+}
+
+.table th {
+    font-weight: 700;
+    background-color: #2E3A3B;
+    font-size: 1.5rem;
+    line-height: 2.333em;
+    color: #fff;
+}
+
+.table td {
+    font-size: 1.25rem;
+    line-height: 2.8em;
+    background-color: #fff;
+}
+
+.table tr:nth-child(2n) td {
+    background-color: #EFEFEF;
+}
+
+
+
 @-webkit-keyframes mmfadeIn {
     from { opacity: 0; }
       to { opacity: 1; }

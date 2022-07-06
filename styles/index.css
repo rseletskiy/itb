@@ -1100,3 +1100,15 @@
 .shop-show-more button {
     width: 100%;
 }
+
+.prices-section {
+    padding: 21px 0 77px;
+}
+
+.prices-section .breadcrumbs {
+    margin-bottom: 35px;
+}
+
+.prices-title {
+    margin-bottom: 44px;
+}
