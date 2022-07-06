@@ -298,6 +298,8 @@ a {
 }
 
 a.primary-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex
 }
 
@@ -354,8 +356,8 @@ a.primary-btn {
     position: absolute;
     top: 0;
     left: 0;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(46, 58, 59, 0.6)), to(rgba(46, 58, 59, 0.6)));
     background: -o-linear-gradient(bottom, rgba(46, 58, 59, 0.6), rgba(46, 58, 59, 0.6));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(46, 58, 59, 0.6)), to(rgba(46, 58, 59, 0.6)));
     background: linear-gradient(0deg, rgba(46, 58, 59, 0.6), rgba(46, 58, 59, 0.6));
     -webkit-transition: opacity .4s ease;
     -o-transition: opacity .4s ease;
@@ -651,6 +653,8 @@ a.primary-btn {
     width: 37px;
     background-color: #eee;
     border-radius: 4px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
 }
 
@@ -747,8 +751,6 @@ a.primary-btn {
 .table tr:nth-child(2n) td {
     background-color: #EFEFEF;
 }
-
-
 
 @-webkit-keyframes mmfadeIn {
     from { opacity: 0; }
