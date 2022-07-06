@@ -1112,3 +1112,15 @@
 .prices-title {
     margin-bottom: 44px;
 }
+
+.works-section {
+    padding: 20px 0 80px;
+}
+
+.works-section .breadcrumbs {
+    margin-bottom: 35px;
+}
+
+.works-title {
+    margin-bottom: 60px;
+}
