@@ -43,6 +43,17 @@ try {
 } catch (e) {}
 
 try {
+  let reviewSlider = new Swiper("#popular-news-slider", {
+    slidesPerView: 4,
+    spaceBetween: 74,
+    navigation: {
+      nextEl: ".popular-news-button-next",
+      prevEl: ".popular-news-button-prev",
+    },
+  });
+} catch (e) {}
+
+try {
   const accordions = Array.from(document.querySelectorAll('.accordion-container'));
   new Accordion(accordions, {
     showMultiple: true,
