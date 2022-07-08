@@ -102,6 +102,344 @@
     </header>
 
     <main>
+        <section class="cart-section">
+            <div class="container">
+                <ul class="breadcrumbs gray">
+                    <li class="breadcrumbs__item">
+                        <a href="./index.html" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="./index.html" class="breadcrumbs__link">Моя корзина</a>
+                    </li>
+                </ul>
+                <h1 class="cart-title regular-title">
+                    Моя корзина
+                </h1>
+            </div>
+            <ul class="cart-list">
+                <li class="cart-item">
+                    <div class="container">
+                        <div class="cart-item-wrapper">
+                            <div class="cart-item__img">
+                                <img src="./assets/images/shop-item-1.jpg" draggable="false" width="380" height="296" alt="Камера DH-HAC">
+                            </div>
+                            <div class="cart-item__content">
+                                <div class="cart-item__header flex-between">
+                                    <h5 class="cart-item__title">
+                                        1. Камера DH-HAC
+                                    </h5>
+                                    <button type="button" class="cart-delete-btn">
+                                        <span>Удалить</span> 
+                                        <img src="./assets/images/delete-icon.svg" draggable="false" width="20" height="20" alt="Удалить">
+                                    </button>
+                                </div>
+                                <div class="cart-item__body">
+                                    <div class="cart-item__stats">
+                                        <h5 class="shop-item__subtitle">
+                                            Кратко самые важные характеристики и описание
+                                        </h5>
+                                        <ul class="item-stats">
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Стандарт видеокамеры</span> 
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    HD-CVI
+                                                </div>
+                                            </li>
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Количество мегапикселей</span>
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    2 МП
+                                                </div>
+                                            </li>
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Максимальное разрешение</span>
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    1920x1080
+                                                </div>
+                                            </li>
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Угол обзора</span>
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    101°
+                                                </div>
+                                            </li>
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Матрица</span>
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    CMOS 1/2.8"
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cart-item__control">
+                                        <div class="cart-item__control-row">
+                                            <div class="cart-item__control-key">
+                                                Цена
+                                            </div>
+                                            <div class="cart-item__control-value">
+                                                <span>38 000 руб.</span>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__control-row">
+                                            <div class="cart-item__control-key">
+                                                Количество
+                                            </div>
+                                            <div class="cart-item__control-value">
+                                                <div class="amount">
+                                                    <button class="amount-btn minus">
+                                                        <img src="./assets/images/minus-icon.svg" alt="Минус">
+                                                    </button>
+                                                    <span class="amount-value">2</span>
+                                                    <button class="amount-btn plus">
+                                                        <img src="./assets/images/plus-icon.svg" alt="Плюс">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__sum">
+                                            <div class="cart-item__sum-key">
+                                                Сумма
+                                            </div>
+                                            <div class="cart-item__sum-value">
+                                                76 000 руб.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cart-item">
+                    <div class="container">
+                        <div class="cart-item-wrapper">
+                            <div class="cart-item__img">
+                                <div class="card-tip-list">
+                                    <div class="card-tip discount">
+                                        Скидка 38%
+                                    </div>
+                                </div>
+                                <img src="./assets/images/shop-item-1.jpg" draggable="false" width="380" height="296" alt="Камера DH-HAC">
+                            </div>
+                            <div class="cart-item__content">
+                                <div class="cart-item__header flex-between">
+                                    <h5 class="cart-item__title">
+                                        2. Камера DH-HAC
+                                    </h5>
+                                    <button type="button" class="cart-delete-btn">
+                                        <span>Удалить</span> 
+                                        <img src="./assets/images/delete-icon.svg" draggable="false" width="20" height="20" alt="Удалить">
+                                    </button>
+                                </div>
+                                <div class="cart-item__body">
+                                    <div class="cart-item__stats">
+                                        <h5 class="shop-item__subtitle">
+                                            Кратко самые важные характеристики и описание
+                                        </h5>
+                                        <ul class="item-stats">
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Стандарт видеокамеры</span> 
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    HD-CVI
+                                                </div>
+                                            </li>
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Количество мегапикселей</span>
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    2 МП
+                                                </div>
+                                            </li>
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Максимальное разрешение</span>
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    1920x1080
+                                                </div>
+                                            </li>
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Угол обзора</span>
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    101°
+                                                </div>
+                                            </li>
+                                            <li class="item-stats__item">
+                                                <div class="item-stats__key">
+                                                    <span>Матрица</span>
+                                                </div>
+                                                <div class="item-stats__value">
+                                                    CMOS 1/2.8"
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cart-item__control">
+                                        <div class="cart-item__control-row">
+                                            <div class="cart-item__control-key">
+                                                Цена
+                                            </div>
+                                            <div class="cart-item__control-value">
+                                                <span data-full-price="22 000 руб.">18 000 руб.</span> 
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__control-row">
+                                            <div class="cart-item__control-key">
+                                                Количество
+                                            </div>
+                                            <div class="cart-item__control-value">
+                                                <div class="amount">
+                                                    <button class="amount-btn minus">
+                                                        <img src="./assets/images/minus-icon.svg" alt="Минус">
+                                                    </button>
+                                                    <span class="amount-value">2</span>
+                                                    <button class="amount-btn plus">
+                                                        <img src="./assets/images/plus-icon.svg" alt="Плюс">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__sum">
+                                            <div class="cart-item__sum-key">
+                                                Сумма
+                                            </div>
+                                            <div class="cart-item__sum-value">
+                                                76 000 руб.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="cart-result">
+                <div class="container">
+                    <div class="cart-result-wrapper">
+                        <div class="cart-result-discount">
+                            <div class="cart-result-key">
+                                Ваша скидка составила:
+                            </div>
+                            <div class="cart-result-value">
+                                4000 руб.
+                            </div>
+                        </div>
+                        <div class="cart-result-main">
+                            <div class="cart-result-main-key">
+                                Итого
+                            </div>
+                            <div class="cart-result-main-value">
+                                94 000 руб.
+                            </div>
+                        </div>
+                        <button type="button" class="primary-btn result-btn">
+                            Оформить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-section">
+            <div class="container">
+                <h4 class="contacts-title regular-title">
+                    Контакты
+                </h4>
+                <div class="contacts-wrapper">
+                    <a href="https://goo.gl/maps/7qE5hPebHN6MWock9" target="_blank" rel="noopener noreferrer" class="contacts-map">
+                        <img src="./assets/images/map.jpg" draggable="false" width="780" height="444" alt="Карта">
+                    </a>
+                    <div class="contacts-info">
+                        <div class="contacts-main">
+                            <ul class="contacts-list">
+                                <li class="contacts-row">
+                                    <div class="contacts-row__icon">
+                                        <img src="./assets/images/icon-geo.svg" draggable="false" width="24" height="37" alt="geo">
+                                    </div>
+                                    <div class="contacts-group">
+                                        <a href="https://goo.gl/maps/7qE5hPebHN6MWock9" target="_blank" rel="noopener noreferrer" class="contacts-link">
+                                            Екатеринбург <br> ул. Московская, д. 70, оф. 102
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="contacts-list">
+                                <li class="contacts-row">
+                                    <div class="contacts-row__icon">
+                                        <img src="./assets/images/icon-mobile.svg" draggable="false" width="19" height="29" alt="Телефон">
+                                    </div>
+                                    <div class="contacts-group">
+                                        <a href="tel:+73432436630" class="contacts-link">
+                                            +7 (343) 243-66-30
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="contacts-row">
+                                    <div class="contacts-row__icon">
+                                        <img src="./assets/images/icon-mail.svg" draggable="false" width="28" height="19" alt="Почта">
+                                    </div>
+                                    <div class="contacts-group">
+                                        <a href="mailto:info@itb96.ru" class="contacts-link">
+                                            info@itb96.ru
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <ul class="contacts-list">
+                                <li class="contacts-row">
+                                    <div class="contacts-row__icon">
+                                        <img src="./assets/images/icon-hours.svg" draggable="false" width="28" height="28" alt="Расписание">
+                                    </div>
+                                    <div class="contacts-group">
+                                        <div class="contacts-link">
+                                            Пн-Пт: 09:00 до 20:00
+                                        </div>
+                                        <div class="contacts-link">
+                                            Сб: 10:00 до 15:00
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contacts-social">
+                            <span class="contacts-social-title">
+                                Подписывайтесь на нас в соцсетях:
+                            </span>
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="social-list__link">
+                                        <img src="./assets/images/youtube.svg" draggable="false" width="48" height="48" alt="YouTube">
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="social-list__link">
+                                        <img src="./assets/images/vk.svg" draggable="false" width="48" height="48" alt="VK">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer class="footer">

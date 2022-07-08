@@ -124,6 +124,7 @@ try {
 
     let change = function (e) {
       clear();
+      e.preventDefault();
       e.target.classList.add("active");
       let id = e.currentTarget.getAttribute("data-tab");
       document.getElementById(id).classList.add("active");
