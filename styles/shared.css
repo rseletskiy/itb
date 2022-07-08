@@ -265,7 +265,8 @@ a {
 }
 
 .breadcrumbs__item a {
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     overflow: hidden; 
     max-width: 164px;
     width: 100%; 
