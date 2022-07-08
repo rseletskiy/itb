@@ -264,6 +264,15 @@ a {
     margin-right: 8px;
 }
 
+.breadcrumbs__item a {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    max-width: 164px;
+    width: 100%; 
+    display: block;
+    white-space: nowrap;
+}
+
 .breadcrumbs__link {
     font-size: 1rem;
     line-height: 1.5em;

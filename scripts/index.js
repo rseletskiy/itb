@@ -54,6 +54,23 @@ try {
 } catch (e) {}
 
 try {
+  var shopItemSliderSub = new Swiper(".shop-item-slider-sub", {
+    spaceBetween: 17,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var shopItemSliderMain = new Swiper(".shop-item-slider-main", {
+    spaceBetween: 17,
+    thumbs: {
+      swiper: shopItemSliderSub,
+    },
+  });
+} catch (e) {
+  console.error(e);
+}
+
+try {
   const accordions = Array.from(document.querySelectorAll('.accordion-container'));
   new Accordion(accordions, {
     showMultiple: true,
@@ -85,4 +102,35 @@ try {
       MicroModal.show("calculation-modal");
     });
   });
+} catch (e) {}
+
+try {
+  function Tabs() {
+    let bindAll = function () {
+      let menuElements = document.querySelectorAll("[data-tab]");
+      for (let i = 0; i < menuElements.length; i++) {
+        menuElements[i].addEventListener("click", change, false);
+      }
+    };
+
+    let clear = function () {
+      let menuElements = document.querySelectorAll("[data-tab]");
+      for (let i = 0; i < menuElements.length; i++) {
+        menuElements[i].classList.remove("active");
+        let id = menuElements[i].getAttribute("data-tab");
+        document.getElementById(id).classList.remove("active");
+      }
+    };
+
+    let change = function (e) {
+      clear();
+      e.target.classList.add("active");
+      let id = e.currentTarget.getAttribute("data-tab");
+      document.getElementById(id).classList.add("active");
+    };
+
+    bindAll();
+  }
+
+  var connectTabs = new Tabs();
 } catch (e) {}
