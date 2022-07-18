@@ -156,6 +156,14 @@
     .itb-tile:hover .itb-tile__content {
         padding: 0 20px;
     }
+
+    .request-form {
+        width: 41.258064%;
+    }
+
+    .request-img {
+        width: 55.298811%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -472,6 +480,78 @@
         width: 37px;
         height: 37px;
     }
+
+    .swiper-arr-shadow  {
+        display: none;
+    }
+
+    .itb-complex-section {
+        padding: 33px 0 35px;
+    }
+
+    .itb-complex-title {
+        margin-bottom: 23px;
+    }
+
+    .itb-complex-btn-wrapper {
+        min-width: 214px;
+    }
+
+    .itb-complex-btn-wrapper .primary-btn {
+        padding: 14px 15px 13px;
+    }
+
+    .request-wrapper {
+        flex-direction: column;
+    }
+
+    .request-img {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .request-form {
+        width: 100%;
+    }
+
+    .request-form .form-control {
+        margin-bottom: 8px;
+    }
+
+    .request-form .form-control:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .request-form .primary-btn {
+        max-width: 214px;
+        padding: 14px 15px 13px;
+        margin-bottom: 21px;
+    }
+
+    .request-tip {
+        font-size: 0.75rem;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    .request-section {
+        padding: 27px 0 28px;
+    }
+
+    .install-section_services .install-list {
+        margin-bottom: 0;
+    }
+
+    .install-section_services #install-list {
+        margin-bottom: 32px;
+    }
+
+    .services-link {
+        font-size: 1rem;
+        padding: 10px 18px 11px;
+    }
+
+
 }
 
 

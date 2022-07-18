@@ -64,6 +64,21 @@ try {
       nextEl: '.itb-complex-button-next',
       prevEl: '.itb-complex-button-prev',
     },
+    breakpoints: {  
+      '320': {
+        slidesPerView: 1,
+        pagination: {
+          el: '.itb-complex-pagination',
+          clickable: true
+        }
+      },
+      '576': {
+        slidesPerView: 2,
+      },
+      '768': {
+        slidesPerView: 3,
+      },
+    }
   });
 } catch (e) {}
 
@@ -229,8 +244,6 @@ try {
           clickable: true
         }
       });
-  
-      
     };
   
     breakpoint.addListener(breakpointChecker);
