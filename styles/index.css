@@ -1,6 +1,7 @@
 .header {
     background-color: #2E3A3B;
     padding-bottom: 2px;
+    position: relative;
 }
 
 .logo {
@@ -2041,4 +2042,16 @@
     max-width: 211px;
     padding: 10px 15px 9px;
     font-size: 1rem;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.cart-link:not(.cart-link_m) {
+    display: flex;
+}
+
+.cart-link.cart-link_m {
+    display: none;
 }
