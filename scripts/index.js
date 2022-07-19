@@ -131,6 +131,14 @@ try {
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      '320': {
+        spaceBetween: 10
+      },
+      '576': {
+        spaceBetween: 17
+      }
+    }
   });
   var shopItemSliderMain = new Swiper('.shop-item-slider-main', {
     spaceBetween: 17,

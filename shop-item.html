@@ -45,9 +45,28 @@
         <div class="container">
             <div class="header-wrapper flex-between">
                 <a href="./index.html" class="logo">
-                    <img src="./assets/images/logo.svg" width="244" height="78" draggable="false"
-                        alt="Инновационные технологии безопасности">
+                    <img src="./assets/images/logo.svg" width="244" height="78" draggable="false" alt="Инновационные технологии безопасности">
                 </a>
+
+                <!-- mobile menu and cart buttons start -->
+                <div class="flex-align-center">
+                    <div class="humburger" id="burger">
+                        <span class="l1"></span>
+                        <span class="l2"></span>
+                        <span class="l3"></span>
+                    </div>
+
+                    <a href="#" class="cart-link cart-link_m flex-center p-relative" data-count="3">
+                        <img src="./assets/images/cart-icon.svg" width="25" height="22" draggable="false" alt="Моя корзина">
+                    </a>
+                </div>
+                <!-- mobile menu and cart buttons end -->
+
+                <!-- mobile logo start -->
+                <a href="./index.html" class="logo-mobile">
+                    <img src="./assets/images/logo-mobile.svg" width="71" height="49" alt="Инновационные технологии безопасности">
+                </a>
+                <!-- mobile logo end -->
 
                 <nav>
                     <ul class="menu flex-align-center">
@@ -100,6 +119,58 @@
                 </div>
             </div>
         </div>
+        <!-- mobile menu start -->
+        <div class="mobile-menu-wrapper" id="mobile-menu">
+            <nav>
+                <ul class="mobile-menu">
+                    <li class="accordion-container">
+                        <div class="ac">
+                            <div class="ac-header">
+                                <button type="button" class="ac-trigger">
+                                    <span>Услуги</span>
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                                <a href="./service.html" class="ac-link">Видеонаблюдение</a>
+                                <a href="./service.html" class="ac-link">ОПС</a>
+                                <a href="./service.html" class="ac-link">СКУД</a>
+                                <a href="./service.html" class="ac-link">Электромонтаж</a>
+                                <a href="./service.html" class="ac-link">Проектирование</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./price.html" class="mobile-menu-link">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./shop.html" class="mobile-menu-link">
+                            Интернет-магазин
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./our-works.html" class="mobile-menu-link">
+                            Наши работы
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./news.html" class="mobile-menu-link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./contacts.html" class="mobile-menu-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- mobile menu end -->
     </header>
 
     <main>
@@ -175,6 +246,53 @@
                         <h1 class="shop-item-title regular-title">
                             Камера DH-HAC-HDW1230MP
                         </h1>
+                        <!-- mobile-filters start -->
+                        <div class="mobile-filters flex-center">
+                            <button type="button" class="mobile-filter-btn js-m-filter-btn" data-id="catalog">
+                                Каталог
+                            </button>
+                            <div class="mobile-filter-wrapper js-m-filter-wrapper" id="catalog">
+                                <div class="control control_catalog">
+                                    <div class="control__body">
+                                        <div class="accordion-container">
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Видеорегистраторы</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <a href="#" class="ac-link">Item 1</a>
+                                                    <a href="#" class="ac-link">Item 2</a>
+                                                    <a href="#" class="ac-link">Item 3</a>
+                                                    <a href="#" class="ac-link">Item 4</a>
+                                                </div>
+                                            </div>
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Видеорегистраторы</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <a href="#" class="ac-link">Item 1</a>
+                                                    <a href="#" class="ac-link">Item 2</a>
+                                                    <a href="#" class="ac-link">Item 3</a>
+                                                    <a href="#" class="ac-link">Item 4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile-filters end -->
 
                         <div class="shop-item-wrapper">
                             <div class="shop-item__slider">
@@ -435,65 +553,68 @@
                 <h4 class="install__title regular-title">
                     Похожие товары
                 </h4>
-                <ul class="install-list">
-                    <li class="itb-card">
-                        <div class="itb-card__img">
-                            <img src="./assets/images/card-img-1.jpg" draggable="false" width="380" height="221" alt="Системы видеонаблюдения">
-                        </div>
-                        <div class="itb-card__body">
-                            <div class="itb-card__info">
-                                <h6 class="itb-card__title">
-                                    Системы видеонаблюдения
-                                </h6>
-                                <p class="itb-card__message">
-                                    Стоимость: от 14 000 руб.
-                                </p>
+                <div class="swiper" id="install-list">
+                    <ul class="install-list swiper-wrapper">
+                        <li class="itb-card swiper-slide">
+                            <div class="itb-card__img">
+                                <img src="./assets/images/card-img-1.jpg" draggable="false" width="380" height="221" alt="Системы видеонаблюдения">
                             </div>
-
-                            <a href="#" class="itb-card__more">
-                                Подробнее
-                            </a>
-                        </div>
-                    </li>
-                    <li class="itb-card">
-                        <div class="itb-card__img">
-                            <img src="./assets/images/card-img-2.jpg" draggable="false" width="380" height="221" alt="Охранно-пожарная сигнализация">
-                        </div>
-                        <div class="itb-card__body">
-                            <div class="itb-card__info">
-                                <h6 class="itb-card__title">
-                                    Охранно-пожарная сигнализация
-                                </h6>
-                                <p class="itb-card__message">
-                                    Стоимость: после осмотра
-                                </p>
+                            <div class="itb-card__body">
+                                <div class="itb-card__info">
+                                    <h6 class="itb-card__title">
+                                        Системы видеонаблюдения
+                                    </h6>
+                                    <p class="itb-card__message">
+                                        Стоимость: от 14 000 руб.
+                                    </p>
+                                </div>
+    
+                                <a href="#" class="itb-card__more">
+                                    Подробнее
+                                </a>
                             </div>
-
-                            <a href="#" class="itb-card__more">
-                                Подробнее
-                            </a>
-                        </div>
-                    </li>
-                    <li class="itb-card">
-                        <div class="itb-card__img">
-                            <img src="./assets/images/card-img-3.jpg" draggable="false" width="380" height="221" alt="Системы контроля и управления доступом">
-                        </div>
-                        <div class="itb-card__body">
-                            <div class="itb-card__info">
-                                <h6 class="itb-card__title">
-                                    Системы контроля и управления доступом
-                                </h6>
-                                <p class="itb-card__message">
-                                    Стоимость: после осмотра
-                                </p>
+                        </li>
+                        <li class="itb-card swiper-slide">
+                            <div class="itb-card__img">
+                                <img src="./assets/images/card-img-2.jpg" draggable="false" width="380" height="221" alt="Охранно-пожарная сигнализация">
                             </div>
-
-                            <a href="#" class="itb-card__more">
-                                Подробнее
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                            <div class="itb-card__body">
+                                <div class="itb-card__info">
+                                    <h6 class="itb-card__title">
+                                        Охранно-пожарная сигнализация
+                                    </h6>
+                                    <p class="itb-card__message">
+                                        Стоимость: после осмотра
+                                    </p>
+                                </div>
+    
+                                <a href="#" class="itb-card__more">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </li>
+                        <li class="itb-card swiper-slide">
+                            <div class="itb-card__img">
+                                <img src="./assets/images/card-img-3.jpg" draggable="false" width="380" height="221" alt="Системы контроля и управления доступом">
+                            </div>
+                            <div class="itb-card__body">
+                                <div class="itb-card__info">
+                                    <h6 class="itb-card__title">
+                                        Системы контроля и управления доступом
+                                    </h6>
+                                    <p class="itb-card__message">
+                                        Стоимость: после осмотра
+                                    </p>
+                                </div>
+    
+                                <a href="#" class="itb-card__more">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+	                <div class="swiper-install-pagination slider-pagination"></div>
+                </div>
 
                 <div class="itb-complex-wrapper itb-complex-wrapper_s">
                     <div class="swiper" id="services-slider">
