@@ -259,6 +259,20 @@
     .prices-section .table td a span {
         display: none;
     }
+
+    .news-acticle {
+        flex-direction: column;
+    }
+
+    .news-acticle__img {
+        width: 100%;
+        max-height: 300px;
+        margin-bottom: 25px;
+    }
+
+    .news-acticle__info {
+        width: 100%;
+    }
     
 }
 
@@ -758,6 +772,45 @@
 
     .works-section {
         padding: 21px 0 53px;
+    }
+
+    .news-acticle__img {
+        min-height: unset;
+        height: 212px;
+        margin-bottom: 14px;
+    } 
+
+    .news-acticle__title {
+        font-size: 1rem;
+        margin-bottom: 7px;
+    }
+
+    .news-acticle__message {
+        font-size: 0.75rem;
+        line-height: 1.5em;
+        margin-bottom: 3px;
+    }
+
+    .news-acticle__time {
+        font-size: 0.75rem;
+        line-height: 2.333em;
+    }
+
+    .news-acticle:not(:last-child) {
+        margin-bottom: 28px;
+    }
+
+    .news-more-btn {
+        max-width: 214px;
+        padding: 11px 15px;
+    }
+
+    .news-title {
+        margin-bottom: 25px;
+    }
+
+    .news-section .breadcrumbs {
+        margin-bottom: 15px;
     }
 }
 
