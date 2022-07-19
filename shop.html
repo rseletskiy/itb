@@ -45,9 +45,28 @@
         <div class="container">
             <div class="header-wrapper flex-between">
                 <a href="./index.html" class="logo">
-                    <img src="./assets/images/logo.svg" width="244" height="78" draggable="false"
-                        alt="Инновационные технологии безопасности">
+                    <img src="./assets/images/logo.svg" width="244" height="78" draggable="false" alt="Инновационные технологии безопасности">
                 </a>
+
+                <!-- mobile menu and cart buttons start -->
+                <div class="flex-align-center">
+                    <div class="humburger" id="burger">
+                        <span class="l1"></span>
+                        <span class="l2"></span>
+                        <span class="l3"></span>
+                    </div>
+
+                    <a href="#" class="cart-link cart-link_m flex-center p-relative" data-count="3">
+                        <img src="./assets/images/cart-icon.svg" width="25" height="22" draggable="false" alt="Моя корзина">
+                    </a>
+                </div>
+                <!-- mobile menu and cart buttons end -->
+
+                <!-- mobile logo start -->
+                <a href="./index.html" class="logo-mobile">
+                    <img src="./assets/images/logo-mobile.svg" width="71" height="49" alt="Инновационные технологии безопасности">
+                </a>
+                <!-- mobile logo end -->
 
                 <nav>
                     <ul class="menu flex-align-center">
@@ -100,6 +119,58 @@
                 </div>
             </div>
         </div>
+        <!-- mobile menu start -->
+        <div class="mobile-menu-wrapper" id="mobile-menu">
+            <nav>
+                <ul class="mobile-menu">
+                    <li class="accordion-container">
+                        <div class="ac">
+                            <div class="ac-header">
+                                <button type="button" class="ac-trigger">
+                                    <span>Услуги</span>
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="ac-panel">
+                                <a href="./service.html" class="ac-link">Видеонаблюдение</a>
+                                <a href="./service.html" class="ac-link">ОПС</a>
+                                <a href="./service.html" class="ac-link">СКУД</a>
+                                <a href="./service.html" class="ac-link">Электромонтаж</a>
+                                <a href="./service.html" class="ac-link">Проектирование</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./price.html" class="mobile-menu-link">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./shop.html" class="mobile-menu-link">
+                            Интернет-магазин
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./our-works.html" class="mobile-menu-link">
+                            Наши работы
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./news.html" class="mobile-menu-link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./contacts.html" class="mobile-menu-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- mobile menu end -->
     </header>
 
     <main>
@@ -371,265 +442,522 @@
                         <h1 class="shop-title regular-title">
                             Наиболее востребованные товары
                         </h1>
-                        <div class="shop-list">
-                            <article class="shop-card">
-                                <div class="card-tip-list">
-                                    <div class="card-tip discount">
-                                        Скидка 38%
+                        <!-- mobile-filters start -->
+                        <div class="mobile-filters flex-center">
+                            <button type="button" class="mobile-filter-btn js-m-filter-btn" data-id="catalog">
+                                Каталог
+                            </button>
+                            <button type="button" class="mobile-filter-btn tip js-m-filter-btn" data-id="filters">
+                                Фильтры
+                            </button>
+                            <div class="mobile-filter-wrapper js-m-filter-wrapper" id="catalog">
+                                <div class="control control_catalog">
+                                    <div class="control__body">
+                                        <div class="accordion-container">
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Видеорегистраторы</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <a href="#" class="ac-link">Item 1</a>
+                                                    <a href="#" class="ac-link">Item 2</a>
+                                                    <a href="#" class="ac-link">Item 3</a>
+                                                    <a href="#" class="ac-link">Item 4</a>
+                                                </div>
+                                            </div>
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Видеорегистраторы</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <a href="#" class="ac-link">Item 1</a>
+                                                    <a href="#" class="ac-link">Item 2</a>
+                                                    <a href="#" class="ac-link">Item 3</a>
+                                                    <a href="#" class="ac-link">Item 4</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 1
-                                            </h6>
+                            </div>
+                            <div class="mobile-filter-wrapper js-m-filter-wrapper" id="filters">
+                                <div class="control control_catalog">
+                                    <div class="control__body">
+                                        <div class="accordion-container">
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Стандарт камеры</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 1</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 2</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 3</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 4</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Кол-во мегапикселей</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 1</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 2</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 3</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 4</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Матрица</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 1</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 2</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 3</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 4</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Защита</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 1</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 2</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 3</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 4</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Ночной режим</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 1</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 2</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 3</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 4</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="ac">
+                                                <div class="ac-header">
+                                                    <button type="button" class="ac-trigger">
+                                                        <span>Функции</span>
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12.3137 0.65686L6.65687 6.31371L1.00001 0.65686" stroke="white"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="ac-panel">
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 1</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 2</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 3</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <span class="checkbox-text">Item 4</span>
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <button type="reset" class="reset-button">
+                                            Сбросить все
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile-filters end -->
+                        <div class="swiper swiper-shop-list" id="shop-list-slider">
+                            <div class="shop-list swiper-wrapper">
+                                <article class="shop-card swiper-slide">
+                                    <div class="card-tip-list">
+                                        <div class="card-tip discount">
+                                            Скидка 38%
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 1
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span data-full-price="14 000 руб.">12 500 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span data-full-price="14 000 руб.">12 500 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn">
+                                            В корзину
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn">
-                                        В корзину
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="shop-card">
-                                <div class="card-tip-list">
-                                    <div class="card-tip action">
-                                        Акция
+                                </article>
+                                <article class="shop-card swiper-slide">
+                                    <div class="card-tip-list">
+                                        <div class="card-tip action">
+                                            Акция
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 2
-                                            </h6>
+                                    
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 2
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span>22 000 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span>22 000 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn added">
+                                            Добавлено
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn added">
-                                        Добавлено
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="shop-card">
-                                <div class="card-tip-list">
-                                    <div class="card-tip new">
-                                        Новинка
+                                </article>
+                                <article class="shop-card swiper-slide">
+                                    <div class="card-tip-list">
+                                        <div class="card-tip new">
+                                            Новинка
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 3
-                                            </h6>
+                                    
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 3
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span>38 000 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span>38 000 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn">
+                                            В корзину
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn">
-                                        В корзину
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="shop-card">
-                                <div class="card-tip-list">
-                                    <div class="card-tip hit">
-                                        Хит продаж
+                                </article>
+                                <article class="shop-card swiper-slide">
+                                    <div class="card-tip-list">
+                                        <div class="card-tip hit">
+                                            Хит продаж
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 4
-                                            </h6>
+                                    
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 4
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span>14 000 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span>14 000 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn">
+                                            В корзину
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn">
-                                        В корзину
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="shop-card">
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 5
-                                            </h6>
+                                </article>
+                                <article class="shop-card swiper-slide">
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 5
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span>14 000 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span>14 000 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn">
+                                            В корзину
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn">
-                                        В корзину
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="shop-card">
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 6
-                                            </h6>
+                                </article>
+                                <article class="shop-card swiper-slide">
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 6
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span>14 000 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span>14 000 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn">
+                                            В корзину
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn">
-                                        В корзину
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="shop-card">
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 7
-                                            </h6>
+                                </article>
+                                <article class="shop-card swiper-slide">
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 7
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span>14 000 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span>14 000 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn">
+                                            В корзину
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn">
-                                        В корзину
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="shop-card">
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 8
-                                            </h6>
+                                </article>
+                                <article class="shop-card swiper-slide">
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 8
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span>14 000 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span>14 000 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn">
+                                            В корзину
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn">
-                                        В корзину
-                                    </button>
-                                </div>
-                            </article>
-                            <article class="shop-card">
-                                <div class="shop-card-wrapper">
-                                    <a href="./shop-item.html" class="shop-card__img">
-                                        <img src="./assets/images/card-img-1.jpg" draggable="false" 
-                                        width="280" height="170" alt="Камера 1">
-                                    </a>
-                                    <div class="shop-card__info">
-                                        <a href="./shop-item.html">
-                                            <h6 class="shop-card__title">
-                                                Камера 9
-                                            </h6>
+                                </article>
+                                <article class="shop-card swiper-slide">
+                                    <div class="shop-card-wrapper">
+                                        <a href="./shop-item.html" class="shop-card__img">
+                                            <img src="./assets/images/card-img-1.jpg" draggable="false" 
+                                            width="280" height="170" alt="Камера 1">
                                         </a>
-                                        <p class="shop-card__message">
-                                            Кратко самые важные характеристики и описание
-                                        </p>
+                                        <div class="shop-card__info">
+                                            <a href="./shop-item.html">
+                                                <h6 class="shop-card__title">
+                                                    Камера 9
+                                                </h6>
+                                            </a>
+                                            <p class="shop-card__message">
+                                                Кратко самые важные характеристики и описание
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="shop-card__control">
-                                    <div class="shop-card__price">
-                                        <span>14 000 руб.</span>
+                                    <div class="shop-card__control">
+                                        <div class="shop-card__price">
+                                            <span>14 000 руб.</span>
+                                        </div>
+                                        <button type="button" class="shop-card__btn">
+                                            В корзину
+                                        </button>
                                     </div>
-                                    <button type="button" class="shop-card__btn">
-                                        В корзину
-                                    </button>
-                                </div>
-                            </article>
+                                </article>
+                            </div>
+	                        <div class="swiper-shop-list-pagination slider-pagination"></div>
                         </div>
 
                         <div class="shop-show-more">

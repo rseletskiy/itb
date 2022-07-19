@@ -38,6 +38,10 @@
         font-size: 1rem;
         line-height: 2.5em;
     }
+
+    .shop-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -136,6 +140,75 @@
     .itb-card__body {
         padding: 21px 15px 29px;
     }
+
+    .filter-aside {
+        display: none;
+    }
+
+    .shop-main {
+        width: 100%;
+    }
+
+    .mobile-filters {
+        margin-bottom: 28px;
+        position: relative;
+    }
+
+    .mobile-filter-btn {
+        font-size: 1rem;
+        line-height: 1.5em;
+        padding: 11px 20px;
+        min-width: 110px;
+        transition: all .4s ease;
+        border: 1px solid #2E3A3B;
+        border-radius: 100px;
+        position: relative;
+    }
+
+    .mobile-filter-btn.active {
+        background-color: #2E3A3B;
+        color: #fff;
+    }
+
+    .mobile-filter-btn:not(:last-child) {
+        margin-right: 9px;
+    }
+
+    .mobile-filter-btn.tip::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #EA730E;
+        top: 11px;
+        right: 16px;
+    }
+
+    .mobile-filter-wrapper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: #2E3A3B;
+        border-radius: 4px;
+        transform: translateY(calc(100% + 28px));
+        z-index: 9999999;
+        transition: all .3s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .mobile-filter-wrapper .ac-panel .checkbox-text {
+        color: #fff;
+    }
+
+    .mobile-filter-wrapper.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -185,6 +258,7 @@
     .prices-section .table td a span {
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -596,16 +670,96 @@
         padding: 7px 2.7142vw;
     }
 
+    .shop-list {
+        display: flex;
+        gap: 0;
+        grid-template-columns: unset;
+    }
+
+    .shop-card-wrapper {
+        display: flex;
+    }
+
+    .card-tip-list {
+        top: 0;
+        left: 0;
+    }
+
+    .card-tip-list .card-tip {
+        width: 100%;
+        font-size: 0.875rem;
+        padding: 0 7px;
+    }
+
+    .shop-card__info {
+        padding: 7px 6px 0 14px;
+    }
+
+    .shop-card__img {
+        width: 94px;
+        height: 94px;
+        min-width: 94px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .shop-card__title {
+        font-size: 1.125rem;
+        line-height: 1.556em;
+        margin-bottom: 12px;
+    }
+
+    .shop-card__message {
+        font-size: 0.875rem;
+        line-height: 1.571em;
+    }
+
+    .shop-card__control {
+        padding: 17px 11px 18px;
+        justify-content: flex-start;
+    }
+
+    .shop-card__btn {
+        padding: 11px 10px 11px;
+    }
+
+    #shop-list-slider.swiper {
+        overflow: visible;
+    }
+
+    .shop-show-more {
+        margin-top: 28px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .shop-show-more .primary-btn {
+        max-width: 214px;
+        padding: 14px 25px 13px;
+        font-size: 0.75rem;
+    }
+
+    .shop-section {
+        padding: 21px 0 45px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mobile-filters {
+        display: none;
+    }
 }
 
 
 @media screen and (min-width: 576px) {
     .itb-tile.swiper-slide,
-    .itb-card.swiper-slide {
+    .itb-card.swiper-slide,
+    .shop-card.swiper-slide {
         width: unset;
     }
 
     .swiper#install-list,
+    .swiper#shop-list-slider,
     .swiper#our-work-list {
         overflow: visible;
     }

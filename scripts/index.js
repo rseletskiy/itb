@@ -214,6 +214,7 @@ try {
   
     let installListSlider;
     let ourWorkListSlider;
+    let shopListSlider;
   
     const breakpointChecker = function () {
       if (breakpoint.matches === true) {
@@ -244,11 +245,65 @@ try {
           clickable: true
         }
       });
+
+      ourWorkListSlider = new Swiper('#shop-list-slider', {
+        slidesPerView: 1,
+        grid: {
+          rows: 3,
+          fill: 'row'
+        },
+        spaceBetween: 16,
+        // autoHeight: true,
+        pagination: {
+          el: '.swiper-shop-list-pagination',
+          clickable: true
+        }
+      });
     };
   
     breakpoint.addListener(breakpointChecker);
     breakpointChecker();
   })();
+} catch (e) {
+  console.error(e);
+}
+
+// mobile filters
+try {
+  const filterButtons = document.querySelectorAll('.js-m-filter-btn');
+  const filterWrappers = document.querySelectorAll('.js-m-filter-wrapper');
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      const button = e.target;
+      let id = button.getAttribute('data-id');
+      let wrapper = document.getElementById(id);
+      resetFilter(id)
+      if(!button.classList.contains('active') &&
+          !wrapper.classList.contains('active')
+        ) {
+          button.classList.add('active')
+          wrapper.classList.add('active')
+        } else {
+          button.classList.remove('active')
+          wrapper.classList.remove('active')
+        }
+    })
+  })
+
+  function resetFilter(id) {
+    filterButtons.forEach(button => {
+      if (button.getAttribute('data-id') != id) {
+        button.classList.remove('active');
+      }
+    })
+
+    filterWrappers.forEach(wrapper => {
+      if(wrapper.getAttribute('id') != id) {
+        wrapper.classList.remove('active');
+      }
+    })
+  }
 } catch (e) {
   console.error(e);
 }
