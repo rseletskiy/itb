@@ -163,6 +163,7 @@
         border: 1px solid #2E3A3B;
         border-radius: 100px;
         position: relative;
+        color: #2E3A3B;
     }
 
     .mobile-filter-btn.active {
