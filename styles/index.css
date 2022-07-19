@@ -2055,3 +2055,11 @@
 .cart-link.cart-link_m {
     display: none;
 }
+
+.cart-item__header.cart-item__header-m {
+    display: none;
+}
+
+.cart-section .breadcrumbs {
+    margin-bottom: 35px;
+} 
