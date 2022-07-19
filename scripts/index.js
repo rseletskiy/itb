@@ -214,6 +214,7 @@ try {
   
     let installListSlider;
     let ourWorkListSlider;
+    let ourWorkPageSlider;
     let shopListSlider;
   
     const breakpointChecker = function () {
@@ -240,6 +241,21 @@ try {
         slidesPerView: 1,
         spaceBetween: 20,
         autoHeight: true,
+        
+        pagination: {
+          el: '.our-work-pagination',
+          clickable: true
+        }
+      });
+
+      ourWorkPageSlider = new Swiper('#our-work-page', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // autoHeight: true,
+        grid: {
+          rows: 3,
+          fill: 'row'
+        },
         pagination: {
           el: '.our-work-pagination',
           clickable: true

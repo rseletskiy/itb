@@ -742,6 +742,22 @@
     .shop-section {
         padding: 21px 0 45px;
     }
+
+    .works-title {
+        margin-bottom: 25px;
+    }
+
+    .works-section .breadcrumbs {
+        margin-bottom: 15px;
+    }
+
+    .itb-tile {
+        min-height: 213px;
+    }
+
+    .works-section {
+        padding: 21px 0 53px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -760,6 +776,7 @@
 
     .swiper#install-list,
     .swiper#shop-list-slider,
+    .swiper#our-work-page,
     .swiper#our-work-list {
         overflow: visible;
     }
