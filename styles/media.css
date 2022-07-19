@@ -210,6 +210,11 @@
         visibility: visible;
     }
 
+    .contacts-page-section .contacts-map {
+        width: 100%;
+        margin-left: unset;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -852,6 +857,38 @@
     .popular-news-title {
         margin-bottom: 27px;
     }
+
+    .contacts-page-section {
+        padding: 13px 0 17px;
+    }
+
+    .contacts-page-section .breadcrumbs {
+        margin-bottom: 15px;
+    }
+
+    .contacts-page-title {
+        margin-bottom: 28px;
+    }
+
+    .contacts-page-section .contacts-social {
+        margin-bottom: 23px;
+    }
+
+    .contacts-download img:first-of-type {
+        width: 30px;
+        height: auto;
+    }
+
+    .contacts-download {
+        font-size: 1rem;
+        line-height: 1.5em;
+        width: 100%;
+    }
+
+    .contacts-download img:last-of-type {
+        margin-left: auto;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
