@@ -89,7 +89,7 @@ try {
     navigation: {
       nextEl: '.services-button-next',
       prevEl: '.services-button-prev',
-    },
+    }
   });
 } catch (e) {}
 
@@ -101,6 +101,27 @@ try {
       nextEl: '.popular-news-button-next',
       prevEl: '.popular-news-button-prev',
     },
+    breakpoints: {
+      '320': {
+        slidesPerView: 1,
+        pagination: {
+          el: '.popular-news-pagination',
+          clickable: true
+        },
+        spaceBetween: 25
+      },
+      '576': {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      '768': {
+        slidesPerView: 3,
+        spaceBetween: 50
+      },
+      '1025': {
+        slidesPerView: 4,
+      },
+    }
   });
 } catch (e) {}
 
