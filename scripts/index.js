@@ -243,6 +243,7 @@ try {
   filterButtons.forEach(button => {
     button.addEventListener('click', function(e) {
       e.preventDefault();
+      alert('click')
       const button = e.target;
       let id = button.getAttribute('data-id');
       let wrapper = document.getElementById(id);
@@ -256,6 +257,7 @@ try {
           button.classList.remove('active')
           wrapper.classList.remove('active')
         }
+        alert('click end')
     })
   })
 
