@@ -881,6 +881,26 @@ a.primary-btn {
     font-weight: 700;
 }
 
+.cd-top {
+    position: absolute;
+    bottom: 44px;
+    right: 7.92857vw;
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    z-index: 99999;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background: url(../assets/images/arrow-up.svg) no-repeat center 50%;
+    background-color: #000;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
 @-webkit-keyframes mmfadeIn {
     from { opacity: 0; }
       to { opacity: 1; }

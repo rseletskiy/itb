@@ -476,6 +476,7 @@
 .contacts-section {
     padding: 79px 0 96px;
     background-color: #2E3A3B;
+    position: relative;
 }
 
 .contacts-title {

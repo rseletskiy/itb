@@ -1161,6 +1161,10 @@
     .mobile-filter-wrapper {
         padding: 0;
     }
+
+    .cd-top {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
