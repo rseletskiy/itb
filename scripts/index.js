@@ -161,18 +161,20 @@ try {
   console.error(e);
 }
 
-MicroModal.init({
-  onShow: (modal) => console.info(`${modal.id} is shown`),
-  onClose: (modal) => console.info(`${modal.id} is hidden`),
-  openTrigger: "data-custom-open",
-  closeTrigger: "data-custom-close",
-  openClass: "is-open",
-  disableScroll: true,
-  disableFocus: false,
-  awaitOpenAnimation: false,
-  awaitCloseAnimation: false,
-  debugMode: true,
-});
+try {
+  MicroModal.init({
+    openTrigger: "data-custom-open",
+    closeTrigger: "data-custom-close",
+    openClass: "is-open",
+    disableScroll: true,
+    disableFocus: false,
+    awaitOpenAnimation: false,
+    awaitCloseAnimation: false,
+    debugMode: true,
+  });
+} catch (e) {
+  console.error(e);
+}
 
 try {
   let calculationsBtns = document.querySelectorAll(
@@ -282,7 +284,6 @@ try {
 try {
   (function () {
     const breakpoint = window.matchMedia("(min-width: 576px)");
-
     let installListSlider;
     let ourWorkListSlider;
     let ourWorkPageSlider;
@@ -322,7 +323,6 @@ try {
       ourWorkPageSlider = new Swiper("#our-work-page", {
         slidesPerView: 1,
         spaceBetween: 20,
-        // autoHeight: true,
         grid: {
           rows: 3,
           fill: "row",
@@ -340,7 +340,6 @@ try {
           fill: "row",
         },
         spaceBetween: 16,
-        // autoHeight: true,
         pagination: {
           el: ".swiper-shop-list-pagination",
           clickable: true,
@@ -394,3 +393,20 @@ try {
   console.error(e);
 }
 
+window.onload = () => {
+  console.log('window: ', window.innerWidth);
+  const acs = Array.from(
+    document.querySelectorAll(".js-shop-detail")
+  );
+  if (window.innerWidth <= 576) {
+    new Accordion(acs, {
+      showMultiple: true,
+    });
+  }
+}
+
+window.onresize = () => {
+  if(window.innerWidth <= 576) {
+    
+  }
+}

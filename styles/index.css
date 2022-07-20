@@ -1542,10 +1542,15 @@
 }
 
 .shop-item__subtitle {
-    font-size: 1.25rem;
-    line-height: 1.4em;
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-size: 1.25rem !important;
+    line-height: 1.4em !important;
+    font-weight: 400 !important;
+    margin-bottom: 20px !important;
+    font-family: 'Circe', sans-serif !important;
+}
+
+.shop-item__subtitle svg {
+    display: none;
 }
 
 .item-stats {
@@ -2059,3 +2064,4 @@
 .cart-section .breadcrumbs {
     margin-bottom: 35px;
 } 
+

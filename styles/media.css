@@ -1035,10 +1035,19 @@
     }
 
     .shop-item__subtitle {
-        font-size: 1rem;
-        line-height: 1.375em;
-        text-align: center;
-        margin-bottom: 15px;
+        font-size: 1rem !important;
+        line-height: 1.375em !important;
+        text-align: center !important;
+        margin-bottom: 15px !important;
+    }
+
+    .shop-item__subtitle svg {
+        display: inline;
+    }
+
+    .shop-item__subtitle.ac-trigger {
+        justify-content: center;
+        display: block !important;
     }
 
     .item-stats__item,
