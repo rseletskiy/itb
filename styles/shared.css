@@ -779,6 +779,8 @@ a.primary-btn {
     height: 2px;
     width: 100%;
     background-color: #fff;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
 
@@ -791,7 +793,9 @@ a.primary-btn {
 }
 
 .humburger.active .l1 {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 48%;
 }
 
@@ -800,7 +804,9 @@ a.primary-btn {
 }
 
 .humburger.active .l3 {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 48%;
 }
 
@@ -816,20 +822,28 @@ a.primary-btn {
     padding: 15px 16px 21px;
     bottom: 0;
     left: 0;
-    transform: translateY(100%) translateX(-100%);
+    -webkit-transform: translateY(100%) translateX(-100%);
+        -ms-transform: translateY(100%) translateX(-100%);
+            transform: translateY(100%) translateX(-100%);
     visibility: hidden;
     z-index: 9999999;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
     transition: all .4s ease;
     display: none;
 }
 
 .mobile-menu-wrapper.active {
-    transform: translateY(100%) translateX(0);
+    -webkit-transform: translateY(100%) translateX(0);
+        -ms-transform: translateY(100%) translateX(0);
+            transform: translateY(100%) translateX(0);
     visibility: visible;
 }
 
 .mobile-menu .ac .ac-trigger {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     color: #fff;
     font-family: 'Circe', sans-serif;
 }
@@ -866,12 +880,6 @@ a.primary-btn {
     line-height: 1.5em;
     font-weight: 700;
 }
-
-
-
-
-
-
 
 @-webkit-keyframes mmfadeIn {
     from { opacity: 0; }

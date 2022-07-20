@@ -1740,14 +1740,14 @@
 }
 
 .install-section_shop-item .swiper-arr-shadow.swiper-arr-shadow-next {
-    background: -webkit-gradient(linear, right top, left top, color-stop(63.06%, #FFFFFF), to(rgba(255, 255, 255, 0.08)));
     background: -o-linear-gradient(right, #FFFFFF 63.06%, rgba(255, 255, 255, 0.08) 100%);
+    background: -webkit-gradient(linear, right top, left top, color-stop(63.06%, #FFFFFF), to(rgba(255, 255, 255, 0.08)));
     background: linear-gradient(270deg, #FFFFFF 63.06%, rgba(255, 255, 255, 0.08) 100%);
 }
 
 .install-section_shop-item .swiper-arr-shadow.swiper-arr-shadow-prev {
-    background: -webkit-gradient(linear, left top, right top, color-stop(63.06%, #FFFFFF), to(rgba(255, 255, 255, 0.08)));
     background: -o-linear-gradient(left, #FFFFFF 63.06%, rgba(255, 255, 255, 0.08) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(63.06%, #FFFFFF), to(rgba(255, 255, 255, 0.08)));
     background: linear-gradient(90deg, #FFFFFF 63.06%, rgba(255, 255, 255, 0.08) 100%);
 }
 
@@ -2044,19 +2044,14 @@
     font-size: 1rem;
 }
 
-.logo-mobile {
-    display: none;
-}
-
 .cart-link:not(.cart-link_m) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
-.cart-link.cart-link_m {
-    display: none;
-}
-
-.cart-item__header.cart-item__header-m {
+.cart-link.cart-link_m, .cart-item__header.cart-item__header-m,
+.logo-mobile {
     display: none;
 }
 
