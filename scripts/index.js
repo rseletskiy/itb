@@ -243,32 +243,28 @@ try {
   filterButtons.forEach(button => {
     button.addEventListener('click', function(e) {
       e.preventDefault();
-      alert('click')
       const button = e.target;
       let id = button.getAttribute('data-id');
       let wrapper = document.getElementById(id);
-      resetFilter(id)
-      if(!button.classList.contains('active') &&
-          !wrapper.classList.contains('active')
-        ) {
+      resetFilter(id, filterButtons, filterWrappers);
+      if(!button.classList.contains('active') && !wrapper.classList.contains('active')) {
           button.classList.add('active')
           wrapper.classList.add('active')
         } else {
           button.classList.remove('active')
           wrapper.classList.remove('active')
         }
-        alert('click end')
     })
   })
 
-  function resetFilter(id) {
-    filterButtons.forEach(button => {
+  function resetFilter(id, buttons, wrappers) {
+    buttons.forEach(button => {
       if (button.getAttribute('data-id') != id) {
         button.classList.remove('active');
       }
     })
 
-    filterWrappers.forEach(wrapper => {
+    wrappers.forEach(wrapper => {
       if(wrapper.getAttribute('id') != id) {
         wrapper.classList.remove('active');
       }
