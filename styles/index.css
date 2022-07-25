@@ -2065,3 +2065,22 @@
     margin-bottom: 35px;
 } 
 
+.description-section {
+    padding: 40px 0 38px;
+    background-color: #EFEFEF;
+}
+
+.description-wrapper {
+    font-size: 1rem;
+    line-height: 1.75em;
+    -webkit-column-gap: 66px;
+       -moz-column-gap: 66px;
+            column-gap: 66px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+}
+
+.description-wrapper > * {
+    margin-bottom: 25px;
+}
